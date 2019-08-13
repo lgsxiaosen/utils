@@ -10,18 +10,13 @@ import java.util.List;
 
 /**
  * @author xiaosen
- * @date 2019/1/7 10:56
- * @description
  */
 public class QconfUtils {
     private static final Logger logger = LoggerFactory.getLogger(QconfUtils.class);
 
     /**
      * @author xiaosen
-     * @description 获取所有地址
-     * @date 2019/1/7
-     * @param
-     * @return
+     * 获取所有地址
      */
     public static List<String> getAllHost(String qconf){
         List<String> allHost = new ArrayList<>();
@@ -38,10 +33,7 @@ public class QconfUtils {
 
     /**
      * @author xiaosen
-     * @description 获取地址
-     * @date 2019/1/7
-     * @param
-     * @return
+     * 获取地址
      */
     public static String getHost(String qconf){
         String host = "";

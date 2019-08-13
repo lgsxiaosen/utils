@@ -2,8 +2,7 @@ package com.github.lgsxiaosen.utils.utils;
 
 /**
  * @author: xiaosen
- * @date: 2018/11/29 13:33
- * @description: 公共返回类
+ * 公共返回类
  */
 public class ResponseResult<T> {
 

@@ -10,8 +10,6 @@ import java.util.Set;
 
 /**
  * @author liuguisen
- * @date 2019/2/12 16:38
- * @description
  */
 public class BeanValidator {
 

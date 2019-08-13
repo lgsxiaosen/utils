@@ -2,8 +2,7 @@ package com.github.lgsxiaosen.utils.utils;
 
 /**
  * @author: xiaosen
- * @date: 2018/11/29 13:39
- * @description: 返回状态码
+ * 返回状态码
  */
 public enum ResponseCode {
     SERVER_STATUS_ERROR("6000", "server状态错误"),

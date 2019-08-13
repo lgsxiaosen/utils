@@ -10,17 +10,12 @@ import java.util.function.Predicate;
 
 /**
  * @author xiaosen
- * @date 2019/6/4 14:24
- * @description
  */
 public class CommonUtils {
 
     /**
      * @author xiaosen
-     * @description 获取随机数方法
-     * @date 2019/6/4
-     * @param
-     * @return
+     * 获取随机数方法
      */
     public static ThreadLocalRandom getLocalRandom(){
         return ThreadLocalRandom.current();
@@ -28,10 +23,7 @@ public class CommonUtils {
 
     /**
      * @author xiaosen
-     * @description 获取指定范围随机数
-     * @date 2019/5/29
-     * @param
-     * @return
+     * 获取指定范围随机数
      */
 
     public static int getRandomIndex(int min, int max){
@@ -46,7 +38,6 @@ public class CommonUtils {
     /**
      * 去重
      * @param list
-     * @return
      */
     public static<T> List<T> removeDuplicate(List<T> list){
         if (list.size()>1){
@@ -60,10 +51,7 @@ public class CommonUtils {
 
     /**
      * @author xiaosen
-     * @description 去重
-     * @date 2019/8/13
-     * @param
-     * @return
+     * 去重
      */
     public static <T> Predicate<T> distinctByKey(Function<? super T, ?> keyExtractor) {
         Set<Object> seen = ConcurrentHashMap.newKeySet();

@@ -10,8 +10,6 @@ import java.net.InetAddress;
 
 /**
  * @author xiaosen
- * @date 2019/4/1 16:43
- * @description
  */
 public class SendStatsd {
     private static final Logger logger = LoggerFactory.getLogger(SendStatsd.class);

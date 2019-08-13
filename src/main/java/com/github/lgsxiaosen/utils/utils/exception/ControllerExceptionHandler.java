@@ -20,8 +20,6 @@ import java.util.List;
 
 /**
  * @author xiaosen
- * @date 2018/12/18 10:11
- * @description
  */
 @ControllerAdvice
 public class ControllerExceptionHandler {

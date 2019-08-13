@@ -10,8 +10,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 
 /**
  * @author xiaosen
- * @date 2018/12/27 13:41
- * @description
  */
 @Configuration
 public class SpringMvcConfigure extends WebMvcConfigurationSupport {

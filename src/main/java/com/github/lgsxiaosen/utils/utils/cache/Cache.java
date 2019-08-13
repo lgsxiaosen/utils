@@ -5,8 +5,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @author xiaosen
- * @date 2019/6/6 15:36
- * @description 简单的java缓存
+ * 简单的java缓存
  */
 public class Cache {
     private static Cache cache;

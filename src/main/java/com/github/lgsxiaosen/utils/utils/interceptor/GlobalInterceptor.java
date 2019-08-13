@@ -9,8 +9,6 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * @author xiaosen
- * @date 2018/12/27 13:37
- * @description
  */
 public class GlobalInterceptor implements HandlerInterceptor {
     @Override

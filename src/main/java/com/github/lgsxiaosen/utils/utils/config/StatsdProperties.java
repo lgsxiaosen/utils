@@ -5,8 +5,6 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @author xiaosen
- * @date 2019/6/3 16:49
- * @description
  */
 @Configuration
 @ConfigurationProperties(prefix = "statsd.value")
