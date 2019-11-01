@@ -15,8 +15,9 @@ public class QconfUtils {
     private static final Logger logger = LoggerFactory.getLogger(QconfUtils.class);
 
     /**
-     * @author xiaosen
      * 获取所有地址
+     * @param qconf
+     * @return
      */
     public static List<String> getAllHost(String qconf){
         List<String> allHost = new ArrayList<>();
@@ -32,8 +33,9 @@ public class QconfUtils {
     }
 
     /**
-     * @author xiaosen
      * 获取地址
+     * @param qconf
+     * @return
      */
     public static String getHost(String qconf){
         String host = "";
@@ -48,6 +50,12 @@ public class QconfUtils {
         return host;
     }
 
+    /**
+     *
+     * @param qconf
+     * @param flag
+     * @return
+     */
     public static List<String> getDbInfo(String qconf, String flag){
         List<String> dataBase = new ArrayList<>();
         if (StringUtils.isEmpty(qconf)|| StringUtils.isEmpty(flag)){
@@ -66,6 +74,11 @@ public class QconfUtils {
         return dataBase;
     }
 
+    /**
+     *
+     * @param qconf
+     * @return
+     */
     public static String getQconf(String qconf){
         String conf = "";
         if (StringUtils.isEmpty(qconf)){

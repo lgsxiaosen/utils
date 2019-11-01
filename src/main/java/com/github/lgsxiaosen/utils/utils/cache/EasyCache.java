@@ -5,25 +5,25 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @author xiaosen
- * 简单的java缓存
+ * 简易的java缓存
  */
-public class Cache {
-    private static Cache cache;
+public class EasyCache {
+    private static EasyCache easyCache;
 
-    private static class BluedCacheInner{
-        private static final Cache CACHE = new Cache();
+    private static class CacheInner {
+        private static final EasyCache EASY_CACHE = new EasyCache();
     }
 
-    private Cache(){
-        if (cache != null){
+    private EasyCache(){
+        if (easyCache != null){
             throw new RuntimeException("配置缓存异常");
         }
     }
 
     private static final Map<String, Object> CACHE = new ConcurrentHashMap<>();
 
-    public static Cache getCache(){
-        return BluedCacheInner.CACHE;
+    public static EasyCache getEasyCache(){
+        return CacheInner.EASY_CACHE;
     }
 
     public Object put(String k, Object v){

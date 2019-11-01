@@ -1,17 +1,21 @@
 package com.github.lgsxiaosen.utils.utils;
 
+import java.io.Serializable;
+
 /**
  * @author: xiaosen
  * 公共返回类
  */
-public class ResponseResult<T> {
+public class ResponseResult<T> implements Serializable{
+
+    private static final long serialVersionUID = 7517019966821861980L;
 
     private String code;
     private String message;
     private T data;
     private String requestId;
-    private Long requestTime;
-    private Long responseTime;
+    private long requestTime = 0;
+    private long responseTime = 0;
 
 
     public ResponseResult() {
@@ -134,15 +138,15 @@ public class ResponseResult<T> {
         this.requestId = requestId;
     }
 
-    public Long getRequestTime() {
+    public long getRequestTime() {
         return requestTime;
     }
 
-    public void setRequestTime(Long requestTime) {
+    public void setRequestTime(long requestTime) {
         this.requestTime = requestTime;
     }
 
-    public Long getResponseTime() {
+    public long getResponseTime() {
         return responseTime;
     }
 
