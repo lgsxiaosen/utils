@@ -1,10 +1,7 @@
 package com.github.lgsxiaosen.utils.utils;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author xiaosen
@@ -16,6 +13,7 @@ public class Page<T> implements Serializable {
     private InnerPage page = new InnerPage();
     private List<T> items;
     private Map<String, Object> res;
+    private Object extra;
 
     public Page() {
     }
@@ -57,6 +55,17 @@ public class Page<T> implements Serializable {
 
     public void setPage(InnerPage page) {
         this.page = page;
+    }
+
+    public Object getExtra() {
+        if (Objects.isNull(this.extra)){
+            this.extra = Collections.emptyMap();
+        }
+        return extra;
+    }
+
+    public void setExtra(Object extra) {
+        this.extra = extra;
     }
 
 }
