@@ -42,7 +42,7 @@ public class ControllerExceptionHandler {
         logger.error(e.getMessage(), e);
         BindingResult bindingResult = e.getBindingResult();
         String message = validMethod(bindingResult);
-        return new ResponseResult(ResponseCode.ERROR, message);
+        return new ResponseResult(ResponseCode.ARGUMENTERROR, message);
     }
 
     private static String validMethod(BindingResult result) {
@@ -61,7 +61,7 @@ public class ControllerExceptionHandler {
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ResponseBody
     public ResponseResult headerException(ServletException e) {
-        return new ResponseResult(ResponseCode.ARGUMENTERROR, e.getMessage());
+        return new ResponseResult(ResponseCode.ERROR, e.getMessage());
     }
 
     @ExceptionHandler({ValidationException.class})
